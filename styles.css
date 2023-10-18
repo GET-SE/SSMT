@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.babelFishConcept, .voiceAgents {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.babelFishConcept , .voiceAgents  h2 {
+    flex: 6;
+    margin-bottom: 10px;
+    
+}
+
+.babelFishConcept video {
+    width: 60%;
+    height: auto;
+}
+
+.societalImplications {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.societalImplications img {
+    flex: 3;
+    width: 70%;
+    height: auto
+
+
+}
+
+.societalImplicationsContent {
+    flex: 1;
+}
+
+.video-carousel {
+    margin: 20px;
+}
+
+.video-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 250px; /* Set a fixed width for the video items */
+    height: 150px; /* Set a fixed height for the video items */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.video-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video-item span {
+    font-size: 14px;
+    color: #888;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video fits within the fixed dimensions without distortion */
+}
+
+/* Slick Carousel Arrows */
+.slick-prev, .slick-next {
+    font-size: 36px;
+    color: red; /* Change the arrow color to red */
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  
+}
+
+.slick-prev {
+    left: -40px;
+   
+}
+
+.slick-next {
+    right: -40px;
+}
+
+/* Slick Carousel Dots */
+.slick-dots li button {
+    font-size: 12px;
+    color: #007bff;
+}
+
+.slick-dots li.slick-active button {
+    color: #007bff;
+
+}.slick-prev, .slick-next {
+    font-size: 36px; /* Adjust the arrow size */
+    color: black; /* Arrow color (set to black) */
+    background-color: white; /* Arrow background color */
+    border: 2px solid black; /* Arrow border */
+    border-radius: 50%; /* Make the arrow circular */
+    width: 50px; /* Arrow width */
+    height: 50px; /* Arrow height */
+    line-height: 50px; /* Center the arrow vertically */
+    text-align: center; /*
+}
+
+.slick-prev {
+    left: -70px; /* Position the left arrow */
+}
+
+.slick-next {
+    right: -70px; /* Position the right arrow */
+}
+
+/* Add your CSS styles here */
+
+.speech_synthesis{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .hawking_video,
+  video {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .tts-synthesis p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    display: flex;
+}
+
+.video-item {
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    height: auto;
+}
+
+.video-item h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.challenge h2{ color:#007bff
+}
