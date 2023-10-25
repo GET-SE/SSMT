@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
@@ -10,8 +10,11 @@ body {
 header {
     background-color: #007bff;
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -33,16 +36,24 @@ section {
 
 .babelfish_video iframe,
 .ff_video iframe,
-.hawking_iframe iframe,
-.video-container iframe ,
+
 .societalImplications img{
-    margin-left: 20%;
-    width: 60%;
-    height: 300px;
+    
+    margin-left: 10%;
+    width: 560px;
+    height: 315px;
+}
+.hawking_iframe iframe,
+.video-container iframe {
+    margin-left: 5%;
+    width: 560px;
+    height: 315px;
+
 }
 
+
 .video-container h4{
-    margin-left: 20%;
+    margin-left: 5%;
 }
 .societalImplications {
     /* display: flex; */
@@ -54,11 +65,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.societalImplications img {
-    flex: 3;
-    width: 50%;
-    height: auto;
-}
+
 
 .video-carousel {
     margin: 20px;
@@ -103,21 +110,22 @@ section {
 .slick-dots li.slick-active button {
     color: #007bff;
 }
-/* Slick Carousel Dots */
-.slick-dots li button {
+ Slick Carousel Dots 
+ .slick-dots li button {
     font-size: 12px;
     color: #007bff;
-}
+    
+} 
 
 .slick-dots li.slick-active button {
     color: #007bff;
-}
+} 
 
 /* Custom Arrow Styles */
 .slick-prev, .slick-next {
     font-size: 36px;
-    color: #007bff; /* Change the arrow color to a color that contrasts with the background */
-    background-color: white; /* Change the background color of the arrows */
+    color: red; /* Change the arrow color to a color that contrasts with the background */
+    background-color: #f8f9fa; /* Add the desired background color for the arrows */
     border: 2px solid #007bff; /* Arrow border color */
     border-radius: 50%; /* Make the arrow circular */
     width: 50px; /* Arrow width */
@@ -127,18 +135,67 @@ section {
     /* Ensure arrows appear above the carousel */
 }
 
+
 .slick-prev {
     left: -70px;
-     /* Adjust the position of the previous arrow */
-}
+    
+} 
 
-.slick-next {
+ .slick-next {
     right: -70px; /* Adjust the position of the next arrow */
-}
-
+} 
 
 
 
 .challenge h2 {
     color: #007bff;
+}
+
+#evolutionTechnology {
+    background-color: lightblue;
+}
+
+/*--------------------------- For mobile screens ------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+    header {
+        margin: 10px;
+        padding: 20px 0;
+    }
+    section, .babelFishConcept, .voiceAgents, .societalImplications {
+        margin: 10px;
+        padding: 10px;
+    }
+    .babelfish_video iframe, .ff_video iframe, .hawking_iframe iframe, .video-container iframe ,.societalImplications img 
+    {
+        width: 100%;
+        margin-left: 0;
+        height: 200px;
+    }
+    .video-container h4, .video-item h4 {
+        margin-left: 10px;
+    }
+    .societalImplications {
+        flex-direction: column;
+    }
+    .societalImplications img {
+        width: 100%;
+    }
+     .video-carousel {
+        margin-left: 0px;
+    }
+
+    .video-item video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .slick-prev, .slick-next {
+        left: 16px;
+        right: 10px;
+    }
 }

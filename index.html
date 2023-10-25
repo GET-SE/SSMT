@@ -132,16 +132,13 @@
 
        
      </section>
-    <section id="evolutionTechnology">
+    <section id="evolutionTechnology" >
         <h2>Steps towards Speech To Speech Technology</h2>
         <h3>Evolution of Speech To Speech Technology</h3>
-        <div class="video-carousel">
+        <div class="video-carousel" >
             <div class="video-item">
                 <span>1968</span>
-                <!-- <video controls>
-                    <source src="media/HearHere3m.mp4"  type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/PEdOih6Bgu8?si=NzQ6odKzv3QJE5rx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Hear! Here! </h3>
 
@@ -149,40 +146,28 @@
         
             <div class="video-item">
                 <span> 1973</span>
-                <!-- <video controls>
-                    <source src="media/Hearsay 5m.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua0JlhtuDU0?si=T9leOlybEva0QlF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Hearsay</h3>
                 
             </div>
             <div class="video-item">
                 <span>1977</span>
-                <!-- <video controls>
-                    <source src="media/Harpy 5 min.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+              
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/SDwoaH2UBm0?si=CzVO84DhZy4xMcov" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Harpy </h3>
                 
             </div>
             <div class="video-item">
                 <span>1988</span>
-                <!-- <video controls>
-                    <source src="media/1987 Sphinx.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Ubh5WrfDTc?si=couvi8jIpxJdN_Wu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Sphinx </h3>
                 
             </div>
             <div class="video-item">
                 <span>1994</span>
-                <!-- <video controls>
-                    <source src="media/Dictation.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+               
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vDPE7kXErhw?si=wRX1MjAopW5n9I3C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Unlimited Vocabulary Dictation </h3>
                 
@@ -191,10 +176,7 @@
             
             <div class="video-item">
                 <span>1994</span>
-                <!-- <video controls>
-                    <source src="media/USSpeech.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+              
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/LsxDp_oN9cg?si=oj6513nqgiaKqdyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>
                     Spontaneous Speech </h3>
@@ -308,11 +290,24 @@
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                   
+                
                 }
             }
         ]
     });
+    var videos = $('video');
+
+        videos.on('play', function() {
+            slickCarousel.slick('slickPause');
+        });
+
+        videos.on('pause', function() {
+            setTimeout(function() {
+                slickCarousel.slick('slickPlay');
+            }, 10000); // Resume carousel after 10 seconds
+        });
 });
 </script>
 
