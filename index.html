@@ -17,7 +17,6 @@
 <body>
     <header>
         <h1>Open SSMT</h1>
-        <h2>Digital Babel Fish</h2>
         <p>Towards Engineering a Universal Translator of Spoken Languages</p>
         <!-- <p>May 26, 2023</p> -->
     </header>
@@ -38,11 +37,9 @@
                 translator possible.</p>
             </p>
         </div>
-        <!-- <video controls>
-            <source src="media/Babel Fish.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMIQIz8Fj0M?si=rL8siR8G96BJxgq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="babelfish_video">
+        <iframe src="https://www.youtube.com/embed/cMIQIz8Fj0M?si=rL8siR8G96BJxgq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div> 
     </section>
 
     <section class="challenge">
@@ -77,8 +74,9 @@
             <source src="media/ff.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L2f0dQG0ZNc?si=tvCTg519O-PxMtJW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
+        <div class="ff_video">
+        <iframe src="https://www.youtube.com/embed/L2f0dQG0ZNc?si=tvCTg519O-PxMtJW"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </section>
 
     <!-- <section id="idealAssistant">
@@ -231,12 +229,11 @@
              <p>  <strong>Record, Fragment, Concatenate, and Playback:</strong>   Researchers began by recording speech, breaking it into fragments, joining them together, and then playing them back, paving the way for further developments.</p>
                 
               <p> <strong> Text-to-Speech Synthesis (TTS): </strong> Text-to-Speech Synthesis, abbreviated as TTS, emerged as a breakthrough. One notable example is the Klatt Synthesizer, famously used by Stephen Hawking.</p>
-              </div><video controls>
-                <source src="media/hawking.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <!-- <iframe  width="560" height="315" src="https://youtu.be/JIEyQwUvOhw" frameborder="0" allowfullscreen></iframe> -->
-        </section>
+            </div>
+            <div class="hawking_iframe">
+                <iframe  src="https://www.youtube.com/embed/JIEyQwUvOhw?si=4bLFw4cQaH4gfSyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            </section>
 
 
         <section class="tts-synthesis">
@@ -249,25 +246,25 @@
             <strong>Text-to-Speech — Lifelike Speech Synthesis 2021:</strong>
             <p>In 2021, advancements led to the development of even more lifelike speech synthesis techniques, bringing a new level of realism to artificial speech.</p>
             <div class="video-container">
-                <div class="video-item">
+               
                     <h4>Obama S2S translation
                     </h4>
                     <!-- <video controls>
                         <source src="media/Obama speaks Chinese.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video> -->
-                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/JAnKGZ_C_QQ?si=oTsaSJ0O9iwNkVlL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="video-item">
+                    <iframe   src="https://www.youtube.com/embed/JAnKGZ_C_QQ?si=oTsaSJ0O9iwNkVlL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               
+                
                     <h4>Rashid Real-time S2S Demonstration
                     </h4>
                     <!-- <video controls>
                         <source src="media/Rashid 4m.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video> -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yyIGhzEnM6A?si=yRtULiUgqNykcbjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe  src="https://www.youtube.com/embed/yyIGhzEnM6A?si=yRtULiUgqNykcbjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                </div>
+                
             </div>
             
         </section>
@@ -296,10 +293,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
+   $(document).ready(function(){
     // Initialize Slick Carousel
     $('.video-carousel').slick({
         infinite: true,
-        slidesToShow: 2, // Display 2 videos at a time
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -310,11 +308,12 @@
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1 // Display 1 video at a time on smaller screens
+                    slidesToShow: 1
                 }
             }
         ]
     });
+});
 </script>
 
 </body>

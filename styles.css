@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
@@ -21,32 +22,27 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.babelFishConcept, .voiceAgents {
+.babelFishConcept,
+.voiceAgents {
     padding: 20px;
     margin: 20px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.babelFishConcept , .voiceAgents  h2 {
-    flex: 6;
-    margin-bottom: 10px;
-    
 }
 
-.babelFishConcept video {
+.babelfish_video iframe,
+.ff_video iframe,
+.hawking_iframe iframe,
+.video-container iframe {
+    margin-left: 20%;
     width: 60%;
-    height: auto;
+    height: 300px;
 }
 
 .societalImplications {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    
     padding: 20px;
     margin: 20px;
     background-color: white;
@@ -57,14 +53,8 @@ section {
 .societalImplications img {
     flex: 3;
     width: 50%;
-    height: auto
-
-
+    height: auto;
 }
-
-/* .societalImplicationsContent {
-    flex: 1;
-} */
 
 .video-carousel {
     margin: 20px;
@@ -76,9 +66,9 @@ section {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fff;
-    width: 250px; /* Set a fixed width for the video items */
-    height: 150px; /* Set a fixed height for the video items */
-    overflow: hidden; /* Hide overflowing content */
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
 }
 
 .video-item h3 {
@@ -98,32 +88,17 @@ section {
 .video-item video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the video fits within the fixed dimensions without distortion */
+    object-fit: cover;
 }
 
-/* Slick Carousel Arrows */
-.slick-prev, .slick-next {
-    font-size: 36px;
-    color: red; /* Change the arrow color to red */
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-  
+.slick-dots li button {
+    font-size: 12px;
+    color: #007bff;
 }
 
-.slick-prev {
-    left: -40px;
-   
+.slick-dots li.slick-active button {
+    color: #007bff;
 }
-
-.slick-next {
-    right: -40px;
-}
-
 /* Slick Carousel Dots */
 .slick-dots li button {
     font-size: 12px;
@@ -132,66 +107,38 @@ section {
 
 .slick-dots li.slick-active button {
     color: #007bff;
+}
 
-}.slick-prev, .slick-next {
-    font-size: 36px; /* Adjust the arrow size */
-    color: black; /* Arrow color (set to black) */
-    background-color: white; /* Arrow background color */
-    border: 2px solid black; /* Arrow border */
+/* Custom Arrow Styles */
+.slick-prev, .slick-next {
+    font-size: 36px;
+    color: #007bff; /* Change the arrow color to a color that contrasts with the background */
+    background-color: white; /* Change the background color of the arrows */
+    border: 2px solid #007bff; /* Arrow border color */
     border-radius: 50%; /* Make the arrow circular */
     width: 50px; /* Arrow width */
     height: 50px; /* Arrow height */
     line-height: 50px; /* Center the arrow vertically */
-    text-align: center; /*
+    text-align: center;
+    /* Ensure arrows appear above the carousel */
 }
 
 .slick-prev {
-    left: -70px; /* Position the left arrow */
+    left: -70px;
+     /* Adjust the position of the previous arrow */
 }
 
 .slick-next {
-    right: -70px; /* Position the right arrow */
+    right: -70px; /* Adjust the position of the next arrow */
 }
 
-/* Add your CSS styles here */
 
-.speech_synthesis{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .hawking_video,
-  video {
-    height: 100%;
-    width: 50%;
-    object-fit: cover;
-  }
-
-  .tts-synthesis p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
- .video-container {
-    display: flex;
-}
-
- .video-item {
-    flex: 1;
-    margin-right: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    text-align: center;
-    height: auto;
-} 
-
+.tts-synthesis p,
 .video-item h4 {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-
-.challenge h2{ color:#007bff
+.challenge h2 {
+    color: #007bff;
 }
