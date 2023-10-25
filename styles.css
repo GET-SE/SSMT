@@ -45,7 +45,8 @@ section {
 .societalImplications {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+    
     padding: 20px;
     margin: 20px;
     background-color: white;
@@ -55,15 +56,15 @@ section {
 
 .societalImplications img {
     flex: 3;
-    width: 70%;
+    width: 50%;
     height: auto
 
 
 }
 
-.societalImplicationsContent {
+/* .societalImplicationsContent {
     flex: 1;
-}
+} */
 
 .video-carousel {
     margin: 20px;
@@ -171,11 +172,11 @@ section {
     margin-bottom: 15px;
 }
 
-.video-container {
+ .video-container {
     display: flex;
 }
 
-.video-item {
+ .video-item {
     flex: 1;
     margin-right: 20px;
     padding: 10px;
@@ -184,7 +185,7 @@ section {
     background-color: #fff;
     text-align: center;
     height: auto;
-}
+} 
 
 .video-item h4 {
     font-size: 16px;
