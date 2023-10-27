@@ -12,9 +12,28 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+
+
 </head>
 
 <body>
+
+    <nav>
+        
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>  
+          <li><a href="#">Products/Solutions</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+  
+      </nav>
     <header>
         <h1>Open SSMT</h1>
         <p>Towards Engineering a Universal Translator of Spoken Languages</p>
@@ -38,7 +57,7 @@
             </p>
         </div>
         <div class="babelfish_video">
-        <iframe src="https://www.youtube.com/embed/cMIQIz8Fj0M?si=rL8siR8G96BJxgq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMIQIz8Fj0M?si=rL8siR8G96BJxgq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div> 
     </section>
 
@@ -70,24 +89,13 @@
       
         <p>The video shows a future where anyone, regardless of their ability to read or write, can interact with an intelligent assistant using voice commands. Twenty years after the video's release, Apple introduced Siri, capable of providing information and executing basic commands through spoken language. In 2015, Amazon introduced Alexa, which had an always-on and always-listening omnidirectional feature. However, even after 30 years, some of the functionalities envisioned in the video are still not fully realized.</p>
        </div>
-        <!-- <video controls >
-            <source src="media/ff.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
+       
         <div class="ff_video">
         <iframe src="https://www.youtube.com/embed/L2f0dQG0ZNc?si=tvCTg519O-PxMtJW"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
 
-    <!-- <section id="idealAssistant">
-        <h2>The Ideal Intelligent Assistant</h2>
-        <ul>
-            <li>An Alexa-like Intelligent Assistant must see, hear, and interact.</li>
-            <li>It should provide the right information in the right language, at the right time, and at the right
-                level of granularity.</li>
-            <li>The assistant should learn from experience, know what it doesn't know, offer advice in the right
-                context, and be aware of emotions and the environment.</li>
-        </ul> -->
+   
         
     </section>
 
@@ -133,13 +141,15 @@
        
      </section>
     <section id="evolutionTechnology" >
+     
         <h2>Steps towards Speech To Speech Technology</h2>
         <h3>Evolution of Speech To Speech Technology</h3>
-        <div class="video-carousel" >
+        <div class="carousel">
+        <div class="video-carousel">
             <div class="video-item">
                 <span>1968</span>
                 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PEdOih6Bgu8?si=NzQ6odKzv3QJE5rx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe id="player"  width="560" height="315" src="https://www.youtube.com/embed/PEdOih6Bgu8?si=NzQ6odKzv3QJE5rx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Hear! Here! </h3>
 
             </div>
@@ -147,28 +157,28 @@
             <div class="video-item">
                 <span> 1973</span>
                 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ua0JlhtuDU0?si=T9leOlybEva0QlF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/ua0JlhtuDU0?si=T9leOlybEva0QlF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Hearsay</h3>
                 
             </div>
             <div class="video-item">
                 <span>1977</span>
               
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SDwoaH2UBm0?si=CzVO84DhZy4xMcov" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/SDwoaH2UBm0?si=CzVO84DhZy4xMcov" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Harpy </h3>
                 
             </div>
             <div class="video-item">
                 <span>1988</span>
                 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5Ubh5WrfDTc?si=couvi8jIpxJdN_Wu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/5Ubh5WrfDTc?si=couvi8jIpxJdN_Wu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Sphinx </h3>
                 
             </div>
             <div class="video-item">
                 <span>1994</span>
                
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vDPE7kXErhw?si=wRX1MjAopW5n9I3C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/vDPE7kXErhw?si=wRX1MjAopW5n9I3C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>Unlimited Vocabulary Dictation </h3>
                 
             </div>
@@ -177,13 +187,13 @@
             <div class="video-item">
                 <span>1994</span>
               
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/LsxDp_oN9cg?si=oj6513nqgiaKqdyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/LsxDp_oN9cg?si=oj6513nqgiaKqdyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h3>
                     Spontaneous Speech </h3>
                 
             </div>
         </div>
-
+        </div>
         <section class="language_translation">
             <h3>Language Translation</h3>
             <p>
@@ -269,47 +279,6 @@
         </p>
     </section>
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-   $(document).ready(function(){
-    // Initialize Slick Carousel
-    $('.video-carousel').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: true, // Show navigation arrows
-        prevArrow: '<button type="button" class="slick-prev">&#9665;</button>', // Custom previous arrow
-        nextArrow: '<button type="button" class="slick-next">&#9655;</button>', // Custom next arrow
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                   
-                
-                }
-            }
-        ]
-    });
-    var videos = $('video');
-
-        videos.on('play', function() {
-            slickCarousel.slick('slickPause');
-        });
-
-        videos.on('pause', function() {
-            setTimeout(function() {
-                slickCarousel.slick('slickPlay');
-            }, 10000); // Resume carousel after 10 seconds
-        });
-});
-</script>
 
 </body>
 

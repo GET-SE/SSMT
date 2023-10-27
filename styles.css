@@ -7,19 +7,55 @@ body {
     color: #333;
 }
 
+nav {
+    background: #333;
+    position: sticky;
+    top: 0;
+    margin: 10px;
+    margin-top: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+ 
+  
+
 header {
     background-color: #007bff;
     color: white;
     padding: 5px 0;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -27,8 +63,8 @@ section {
 
 .babelFishConcept,
 .voiceAgents {
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,10 +72,9 @@ section {
 
 .babelfish_video iframe,
 .ff_video iframe,
-
 .societalImplications img{
-    
-    margin-left: 10%;
+
+    margin-left: 10%; 
     width: 560px;
     height: 315px;
 }
@@ -48,7 +83,6 @@ section {
     margin-left: 5%;
     width: 560px;
     height: 315px;
-
 }
 
 
@@ -59,12 +93,15 @@ section {
     /* display: flex; */
     /* flex-direction: row; */
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* .carousel{
+    background-color: rgba(0, 0, 0, 0.5);
+} */
 
 
 .video-carousel {
@@ -121,28 +158,15 @@ section {
     color: #007bff;
 } 
 
-/* Custom Arrow Styles */
-.slick-prev, .slick-next {
-    font-size: 36px;
-    color: red; /* Change the arrow color to a color that contrasts with the background */
-    background-color: #f8f9fa; /* Add the desired background color for the arrows */
-    border: 2px solid #007bff; /* Arrow border color */
-    border-radius: 50%; /* Make the arrow circular */
-    width: 50px; /* Arrow width */
-    height: 50px; /* Arrow height */
-    line-height: 50px; /* Center the arrow vertically */
-    text-align: center;
-    /* Ensure arrows appear above the carousel */
-}
 
 
 .slick-prev {
-    left: -70px;
+    margin-left: 5px;
     
 } 
 
  .slick-next {
-    right: -70px; /* Adjust the position of the next arrow */
+    margin-right:5px; /* Adjust the position of the next arrow */
 } 
 
 
@@ -158,6 +182,33 @@ section {
     body {
         margin: 0;
     }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #333;
+        width: 100%;
+      }
+    
+      nav li {
+        display: block;
+      }
+      .carousel{
+        background-color: none;
+    }
+    
+    
+      .hamburger {
+        float: right;
+        display: block;
+      }
+    
+      .dropdown-content {
+        display: block;
+      }
+
     header {
         margin: 10px;
         padding: 20px 0;
@@ -196,3 +247,5 @@ section {
         right: 10px;
     }
 }
+
+
