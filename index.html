@@ -1,284 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.youtube.com https://youtube.com;">
-
-
-
-    <title>Open SSMT</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="script.js"></script>
-
-
-</head>
+    <title>Open SSMT: The Path to Universal Language Translation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+</head> 
 
 <body>
 
-    <nav>
-        
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>  
-          <li><a href="#">Products/Solutions</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-  
-      </nav>
-    <header>
-        <h1>Open SSMT</h1>
-        <p>Towards Engineering a Universal Translator of Spoken Languages</p>
-        <!-- <p>May 26, 2023</p> -->
+    <!-- Header Section -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+    
+        <nav>
+            <ul style="display: flex; list-style-type: none;">
+                <li style="padding-right: 20px;"><a href="#" style="text-decoration: none; color: black; font-weight: bold;">Home</a></li>
+                <li style="padding-right: 20px;"><a href="babelfish.html" style="text-decoration: none; color: black;">Babel Fish Concept</a></li>
+                <li style="padding-right: 20px;"><a href="#" style="text-decoration: none; color: black;">Challenges in S2S Translation</a></li>
+                <li style="padding-right: 20px;"><a href="#" style="text-decoration: none; color: black;">Evolution of Translation Tech</a></li>
+                <li style="padding-right: 20px;"><a href="#" style="text-decoration: none; color: black;">Societal Impact</a></li>
+                <li style="padding-right: 20px;"><a href="#" style="text-decoration: none; color: black;">Diplomacy & Dataset</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="babelFishConcept">
-        <div>
-            <h2>Babel Fish Concept</h2>
-            <p>Science fiction has long imagined universal translators that allow real-time speech-to-speech translation
-                between any two languages. While services like Google Translate can translate text between over 100
-                languages with reasonable accuracy, we do not yet have the capability for accurate real-time voice
-                translation. </p>
-                <p>Developing a "Babel Fish" style universal speech translator could be a Grand Engineering
-                Challenge over the next decade. This concept was illustrated in Douglas Adams' Hitchhiker's Guide to
-                the Galaxy with a fictional creature that translates alien languages in real-time when inserted in the
-                ear. </p>
-                <p>The BBC created a video demonstrating this idea, though the technology does not yet exist.
-                Advances in artificial intelligence and speech recognition may one day make a true universal
-                translator possible.</p>
-            </p>
+    <!-- Main Section -->
+<!-- Main Section -->
+<div style="text-align: center; position: relative;">
+    <img src="media/banner.png" alt="Banner Image" style="width: 100%; height: auto; max-height: 600px;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="font-size: 2.5em; font-weight: bold;">Towards Engineering a Universal Translator of Spoken Languages</h1>
+        <p style="font-size: 1.5em;">Bridging languages. Connecting people.</p>
+        <a href="babelfish.html" style="text-decoration: none;"><button style="padding: 10px 20px; margin-top: 20px; font-size: 1.2em; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Discover the Journey</button></a>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Brief Introduction -->
+    <div style="padding: 30px; text-align: center;">
+        <h2>Introduction</h2>
+        <p>Language forms the core of human connection, but linguistic barriers have always posed challenges. With Open SSMT, we envision a future where these barriers dissolve, allowing seamless communication across cultures. Join us in our pursuit to redefine communication for the 21st century.</p>
+    </div>
+    
+    <div><h2 style="text-align: center;">Features</h2>
+    <div style="display: flex; justify-content: center; padding: 50px; padding-top: 0%;">
+        <div style="padding: 20px;">
+            
+            <img src="media/realtimetranslation.png" alt="Real-time Translation" style="height: 200px; width: 200px;">
+            <p>Instantaneous translation, making conversations flow naturally.</p>
         </div>
-        <div class="babelfish_video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMIQIz8Fj0M?si=rL8siR8G96BJxgq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div> 
-    </section>
-
-    <section class="challenge">
-        <h2>Speech-to-Speech Translator Problem</h2>
-        <p>
-            Currently, there are limited systems that can translate spoken languages, making Speech-to-Speech Translation a challenging task. It involves recognizing speech at the front-end and synthesizing speech at the back-end, dealing with non-grammatical text. Creating a BabelFish-like device for this purpose could greatly benefit society, especially those who are illiterate. It has the potential to make a significant impact.
-        </p>
-      
-    </section>
-
-    <section class="societalImplications">
-       
-        <div class="societalImplicationsContent">
-            <h2>Over a Billion People at the Bottom of the Pyramid</h2>
-            <p>
-                People that earn less than $2 a day cannot read or write. They can't follow written directions, read
-                newspaper articles, use many features of a smartphone, benefit from knowledge sources like Wikipedia, or
-                use platforms like Amazon as most educated people do. A Voice-Only Intelligent Assistant, like Alexa,
-                can be used to carry out many such tasks.
-            </p>
+        <div style="padding: 20px;">
+            <img src="media/aipowered.png" alt="AI-Powered" style="height: 200px; width: 200px;">
+            <p>Harnessing the power of cutting-edge AI to understand and translate languages with precision.</p>
         </div>
-        <img src="media/pyramid.png" alt="Pyramid Image">
-    </section>
-
-    <section class="voiceAgents">
-        <div>
-        <h2>Voice-Only Intelligent Agents & Demonstration from the 1990s</h2>
-      
-        <p>The video shows a future where anyone, regardless of their ability to read or write, can interact with an intelligent assistant using voice commands. Twenty years after the video's release, Apple introduced Siri, capable of providing information and executing basic commands through spoken language. In 2015, Amazon introduced Alexa, which had an always-on and always-listening omnidirectional feature. However, even after 30 years, some of the functionalities envisioned in the video are still not fully realized.</p>
-       </div>
-       
-        <div class="ff_video">
-        <iframe src="https://www.youtube.com/embed/L2f0dQG0ZNc?si=tvCTg519O-PxMtJW"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div style="padding: 20px;">
+            <img src="media/universal_application.png" alt="Universal Application" style="height: 200px; width: 200px;">
+            <p>A universal solution designed to bridge languages and cultures worldwide.</p>
         </div>
-    </section>
-
-   
-        
-    </section>
-
-    <section id="realWorldExamples">
-        <h2>Siri and Alexa</h2>
-        <p>
-            Siri and Alexa can assist people who cannot read or write with various tasks:
-            <ul>
-                <li><strong>Online Buying and Selling:</strong> They can help with buying and selling on platforms like Amazon.</li>
-                <li><strong>Bank Account:</strong> They can assist in opening a bank account.</li>
-                <li><strong>Answering Questions:</strong> They can answer questions like what, who, where, when, how, and why.</li>
-                <li><strong>Access to Information:</strong> They provide access to knowledge and information using resources like Wikipedia.</li>
-                <li><strong>Communication:</strong> They enable communication in any language, allowing voice or video emails and chats.</li>
-                <li><strong>Entertainment and Education:</strong> They facilitate streaming video translation for both entertainment and educational purposes.</li>
-            </ul>
-        </p>
-        <h3>Missing Science of Intelligent Assistants</h3>
-    <p>
-        <ul>
-            <li>See, Hear, and Interact using Voice-only Dialog </li>
-            <li>Give people the right information, in their own language, when they need it, with the right amount of detail.</li>
-            <li>Learn from past experiences and conversations.</li>
-            <li>Give helpful recommendations suited for each situation.</li>
-            <li>Detect emotional cues and respond appropriately.</li>
-            <li>Enable natural back-and-forth conversation and understanding.</li>
-        </ul>
-    </p>
-    <h3>Future Alexa-like Apps Will Require a Universal Translator 
-    </h3>
-    <p>
-        In the future, voice assistant apps similar to Alexa will need a universal translator to be accessible worldwide, particularly for illiterate individuals who cannot read and write.
-    </p>
-   
-    <strong>Requiring </strong>
-    <ul>
-    <li>Speech Recognition</li>
-    <li>Language Translation</li>
-    <li>Speech Synthesis </li>
-    <li>Cognitive Dialog for Speech-to-Speech Translation</li>
-    </ul>
-
-
-       
-     </section>
-    <section id="evolutionTechnology" >
-     
-        <h2>Steps towards Speech To Speech Technology</h2>
-        <h3>Evolution of Speech To Speech Technology</h3>
-        <div class="carousel">
-        <div class="video-carousel">
-            <div class="video-item">
-                <span>1968</span>
-                
-                <iframe id="player"  width="560" height="315" src="https://www.youtube.com/embed/PEdOih6Bgu8?si=NzQ6odKzv3QJE5rx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Hear! Here! </h3>
-
-            </div>
-        
-            <div class="video-item">
-                <span> 1973</span>
-                
-                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/ua0JlhtuDU0?si=T9leOlybEva0QlF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Hearsay</h3>
-                
-            </div>
-            <div class="video-item">
-                <span>1977</span>
-              
-                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/SDwoaH2UBm0?si=CzVO84DhZy4xMcov" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Harpy </h3>
-                
-            </div>
-            <div class="video-item">
-                <span>1988</span>
-                
-                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/5Ubh5WrfDTc?si=couvi8jIpxJdN_Wu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Sphinx </h3>
-                
-            </div>
-            <div class="video-item">
-                <span>1994</span>
-               
-                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/vDPE7kXErhw?si=wRX1MjAopW5n9I3C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Unlimited Vocabulary Dictation </h3>
-                
-            </div>
-        
-            
-            <div class="video-item">
-                <span>1994</span>
-              
-                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/LsxDp_oN9cg?si=oj6513nqgiaKqdyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>
-                    Spontaneous Speech </h3>
-                
-            </div>
+        <div style="padding: 20px;">
+            <img src="media/voiceonlyInterface .png" alt="Voice-Only Interface" style="height: 200px; width: 200px;">
+            <p>Prioritizing voice as the primary medium, ensuring accessibility for all.</p>
         </div>
-        </div>
-        <section class="language_translation">
-            <h3>Language Translation</h3>
-            <p>
-                In 1966, the Automatic Language Processing Advisory Committee (ALPAC) assessed a decade-long language translation research effort. Despite high hopes, the results fell short, leading to significant cuts in funding.
-            </p>
-            
-            <p>
-                During the research, scientists tackled challenges like translating the phrase "Spirit is willing but the flesh is weak" to "Vodka is strong but the meat is rotten" when moving from English to Russian and back. They delved into methods such as Parallel Corpora and Statistical Translation, which eventually paved the way for the birth of Google Translate.
-            </p>
-            
-            <p>
-                Excitingly, Google Translate made significant strides, supporting a total of 133 languages after the addition of 24 more languages at Google I/O 2022. To enhance accuracy, researchers focused on finding similarities among languages. They bridged the gaps in translation by understanding language structures through extensive monolingual data and mapping languages using limited bilingual data.
-            </p>
-            
-            <p>
-                This journey from challenges to breakthroughs paints a vivid picture of the fascinating evolution of language translation technology.
-            </p>
-            
-        </section>
-        <section class="speech_synthesis">
-            <div class="hawking_video">
-            <h3>Speech Synthesis</h3>
-            <p><strong>Vocoder at Bell Labs:</strong> The journey started with the Vocoder at Bell Labs, exploring Formant Synthesis techniques.</p>
+    </div>
+    </div>
 
-             <p>  <strong>Record, Fragment, Concatenate, and Playback:</strong>   Researchers began by recording speech, breaking it into fragments, joining them together, and then playing them back, paving the way for further developments.</p>
-                
-              <p> <strong> Text-to-Speech Synthesis (TTS): </strong> Text-to-Speech Synthesis, abbreviated as TTS, emerged as a breakthrough. One notable example is the Klatt Synthesizer, famously used by Stephen Hawking.</p>
-            </div>
-            <div class="hawking_iframe">
-                <iframe  src="https://www.youtube.com/embed/JIEyQwUvOhw?si=4bLFw4cQaH4gfSyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            </section>
-
-
-        <section class="tts-synthesis">
-            <strong>TTS with Stress and Intonation:</strong>
-            <p>Researchers like Alan Black and Kevin Lenzo, along with companies like Cepstral, focused on developing Text-to-Speech systems that incorporated stress and intonation, making the generated speech more lifelike.</p>
-        
-            <strong>NNet-based Synthesis:</strong>
-            <p>The introduction of Neural Network (NNet)-based synthesis techniques marked a significant leap forward in creating natural-sounding speech patterns.</p>
-        
-            <strong>Text-to-Speech — Lifelike Speech Synthesis 2021:</strong>
-            <p>In 2021, advancements led to the development of even more lifelike speech synthesis techniques, bringing a new level of realism to artificial speech.</p>
-            <div class="video-container">
-               
-                    <h4>Obama S2S translation
-                    </h4>
-                    <!-- <video controls>
-                        <source src="media/Obama speaks Chinese.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video> -->
-                    <iframe   src="https://www.youtube.com/embed/JAnKGZ_C_QQ?si=oTsaSJ0O9iwNkVlL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-               
-                
-                    <h4>Rashid Real-time S2S Demonstration
-                    </h4>
-                    <!-- <video controls>
-                        <source src="media/Rashid 4m.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video> -->
-                    <iframe  src="https://www.youtube.com/embed/yyIGhzEnM6A?si=yRtULiUgqNykcbjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                
-            </div>
-            
-        </section>
-      
-    </section>
-   
   
-
-    <section id="aiForGood">
-        <h2>Using AI for Societal Good by Empowering Billions at The Bottom of the Pyramid</h2>
-        <p>
-           
-        <p>For over a billion people who cannot read or write, speech is their primary mode of communication. Recent advancements in Speech Recognition, Language Translation, and Speech Synthesis have paved the way for transformative technologies. Imagine a world where people at the Bottom of the Pyramid can use Alexa-like devices, relying solely on voice interfaces. These devices enable:</p>
-        <ul>
-            <li><strong>Global Communication:</strong> Talking to anyone, anywhere, in any language.</li>
-            <li><strong>Entertainment and Education:</strong> Accessing diverse content for learning and entertainment.</li>
-            <li><strong>Economic Activities:</strong> Engaging in buying, selling, and banking effortlessly.</li>
-        </ul>
-        <p>Enabling everyone to read any book, watch any movie, and talk to anyone, anywhere in the world is now a possibility. The next grand challenge in engineering is creating a Universal Translator of Spoken Languages, akin to a BabelFish, to make this vision a reality.</p>
-        </p>
-    </section>
-
+    <div style="text-align: center; background-color: #f2f2f2; padding: 20px;">
+        <h2>We are working towards</h2>
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 20px;">
+            <div style="margin-right: 20px;">
+                <img src="media/languages translated.png" alt="Speech Bubble Icon" style="width: 250px; height: 200px;">
+                <p>Aiming to support over 100 languages, from widely spoken to regional dialects.</p>
+            </div>
+            <div style="margin-right: 20px;">
+                <img src="media/hourglass.png" alt="Hourglass Icon" style="width: 250px; height: 200px;">
+                <p>Building upon three decades of relentless research and innovation.</p>
+            </div>
+            <div>
+                <img src="media/assistance.png" alt="Inclusivity Icon" style="width: 250px; height: 200px;">
+                <p>Empowering the billion-plus individuals worldwide who can't read or write.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -13,6 +13,7 @@ nav {
     top: 0;
     margin: 10px;
     margin-top: 0;
+    z-index: 1;
   }
   
   nav ul {
@@ -99,9 +100,9 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* .carousel{
-    background-color: rgba(0, 0, 0, 0.5);
-} */
+.carousel{
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 
 .video-carousel {
