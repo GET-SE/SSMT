@@ -5,10 +5,10 @@ import { useState } from "react";
 import styles from "../styles/home.module.css"; // Assuming the CSS module will be in the styles directory
 
 export default function Home() {
-   const [isNavOpen, setIsNavOpen] = useState(false);
-    const toggleNav = () => {
-      setIsNavOpen(!isNavOpen);
-    };
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
   return (
     <>
