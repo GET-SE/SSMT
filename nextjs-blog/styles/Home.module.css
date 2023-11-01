@@ -1,0 +1,341 @@
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.heading {
+  font-size: 1.5em; /* Suitable for smaller screens */
+  padding: 5px; /* Less padding for smaller screens */
+  text-align: center; /* Center text on all screens */
+  color: #333; /* Text color for all screens */
+  background-color: #f4f4f4; /* Background color for all screens */
+  border-radius: 5px; /* Border radius for all screens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for all screens */
+}
+
+.nav {
+  width: 100%;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Dropdown hidden by default */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+.navItem {
+  width: 100%;
+}
+
+.navLink {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: 1px solid white;
+  /* width: 100%; */
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: block;
+  cursor: pointer;
+  font-size: 30px; 
+}
+
+/* When the nav is open, we will add a class to show the navList */
+.navListOpen {
+  display: flex;
+}
+
+
+
+@media (min-width: 768px) {
+
+ 
+  .hamburger {
+      display: none; /* Hide hamburger icon on larger screens */
+  }
+
+  .navList {
+      display: flex; /* Show nav as flex to be horizontal */
+      flex-direction: row;
+     
+  }
+  
+
+  .navItem {
+      display: inline-block;
+  }
+  
+  .heading {
+    font-size: 2em; /* Larger font size for readability */
+    padding: 10px; /* More padding for aesthetic spacing */
+    /* margin-top: 10px; Space above the heading */
+    /* Other styles remain unchanged and are inherited from the mobile defaults */
+  }
+  
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+
+/* Mobile-first styles (default) */
+.bannerContainer {
+  position: relative;
+  width: 100%; /* Full width */
+  margin: auto; /* Center the container */
+}
+
+.bannerImage {
+  width: 100%;
+  height: calc(100vh - 50px); /* Set height to fill the screen minus the navbar height */
+  object-fit: cover; /* Cover the container without stretching the image */
+  object-position: bottom;
+  background-size: cover;
+  /* object-fit: cover; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centered for mobile */
+  align-items: center;
+  padding: 20px; /* Padding for smaller screens */
+}
+
+.overlayTitle {
+  font-size: 1.8em; /* Smaller font for mobile */
+  font-weight: bold;
+  text-align: center;
+}
+
+.overlayText {
+  font-size: 1em; /* Smaller font for mobile */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ctaButton {
+  padding: 8px 16px; /* Smaller padding for mobile */
+  font-size: 1em; /* Smaller font size for mobile */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: #367c39;
+}
+
+/* Media query for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .overlay {
+    justify-content: flex-start; /* Align content to the top */
+    padding-top: 10%; /* Add padding at the top to push content up */
+  }
+
+  .overlayTitle {
+    font-size: 2.5em; /* Larger font for larger screens */
+  }
+
+  .overlayText {
+    font-size: 1.5em; /* Larger font for larger screens */
+  }
+
+  .ctaButton {
+    padding: 10px 20px; /* Larger padding for larger screens */
+    font-size: 1.2em; /* Larger font size for larger screens */
+  }
+}
+
+/* Introduction styles ----------------------------- */
+/* Mobile-first styles (default) */
+.introduction {
+  padding: 30px; /* Sufficient padding around the text */
+  text-align: center; /* Center the text for mobile view */
+  background-color: #fff; /* Assuming a white background */
+  margin-top: 0; /* Add some margin above and below the section */
+}
+
+.introduction h2 {
+  margin-bottom: 20px; /* Space between heading and paragraph */
+  font-size: 1.5em; /* A suitable font-size for mobile */
+}
+
+.introduction p {
+  font-size: 1em; /* A readable font-size for paragraph text on mobile */
+}
+
+/* Media query for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .introduction {
+
+    padding: 50px; /* More padding for a larger screen */
+    margin: 0 0; /* More margin for a larger screen */
+    /* You can also adjust the max-width to ensure the text doesn't stretch too wide for readability */
+    max-width: 800px; /* Or whatever max-width you see fit */
+    margin-left: auto; /* Center the block horizontally */
+    margin-right: auto;
+    
+  }
+
+  .introduction h2 {
+    font-size: 2em; /* Larger font-size for heading on larger screens */
+  }
+
+  .introduction p {
+    font-size: 1.2em; /* Slightly larger font-size for text on larger screens */
+  }
+}
+
+
+
+/* Mobile-first styles (default) */
+.features {
+  padding: 20px; /* Padding around the entire section */
+  background-color: #fff; /* Assuming a white background */
+  margin-top:0;
+}
+
+.featuresHeading {
+  text-align: center; /* Center the heading for mobile view */
+  margin-bottom: 30px; /* Space below the heading */
+  font-size: 1.5em; /* Font size for mobile view */
+}
+
+.featureItem {
+  margin-bottom: 20px; /* Space between feature items on mobile */
+  border: 1px solid grey;
+}
+
+.featureImage {
+  width: 100%; /* Full width on mobile */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.featureText {
+  text-align: center; /* Center text for mobile view */
+  font-size: 1em; /* Font size for the text on mobile */
+}
+
+/* Media query for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .features {
+    padding: 50px; 
+    margin:0;/* More padding for larger screens */
+    /* background-color: #f2f2f2; */
+  }
+
+  .featuresHeading {
+    font-size: 2em; /* Larger font size for desktop */
+  }
+
+  .featuresGrid {
+    display: grid; /* Use grid layout for larger screens */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit feature items with a min width */
+    gap: 20px; /* Space between grid items */
+  }
+
+ 
+
+  .featureText {
+    font-size: 1.2em; /* Slightly larger font size for desktop */
+  }
+}
+
+
+/* ... other styles ... */
+
+/* Working Towards Section */
+.workingTowards {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.workingTowardsHeading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+.workingTowardsGrid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout on mobile */
+  gap: 20px;
+}
+
+.workingTowardsItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.workingTowardsImageContainer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.workingTowardsImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures image is scaled within the container without cropping */
+}
+
+.workingTowardsText {
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  .workingTowardsGrid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout on desktop */
+  }
+
+  .workingTowardsItem {
+    padding: 30px;
+  }
+
+  .workingTowardsHeading {
+    font-size: 2em;
+  }
+
+  .workingTowardsText {
+    font-size: 1.2em;
+  }
+}
+/* ... other styles ... */
